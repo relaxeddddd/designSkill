@@ -1,0 +1,144 @@
+.main {}
+
+.main__bg {
+    background-image: url("../img/main/mainBg.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.main__bg-overlay {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.main__container {
+    position: relative;
+    z-index: 1;
+    max-width: 1226px;
+    margin: 0 auto;
+}
+
+.container {
+    padding:0 23px;
+}
+
+.main__content {
+    color: #fff;
+    max-width: 780px;
+
+    padding-top: 16%;
+    padding-bottom: 25%;
+
+    padding-left: 3%;
+    padding-right: 9%;
+}
+
+@media screen and (max-width: 585px) {
+    .main__content {
+        padding-right: 0px;
+        padding-left: 0px;
+
+        padding-top: 70px;
+    }
+}
+
+.main__title {
+    font-family: "Yaseva One";
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 50px;
+
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 475px) {
+    .main__title {
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+
+
+.main__title span {
+    color: #E3B873;
+}
+
+.main__text {
+    font-family: 'Nunito Sans';
+    font-size: 21px;
+    line-height: 35px;
+    margin-bottom: 28px;
+    max-width: 520px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 460px) {
+    .main__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.main__buttons {}
+
+.button {}
+
+.main__button {
+    color: #fff;
+    width: 223px;
+    background: none;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    padding: 18px 0;
+
+    padding-left: calc(var(--index)*2);
+    padding-right: calc(var(--index)*2);
+
+    font-family: 'Nunito Sans';
+    font-size: 11px;
+    text-transform: uppercase;
+    font-style: italic;
+    transition: .5s all;
+}
+
+@media screen and (max-width: 601px) {
+    .main__button {
+        width: 100%;
+    }
+}
+
+.main__button:not(:first-child) {
+    margin-left: 18px;
+}
+
+@media screen and (max-width: 601px) {
+    .main__button:not(:first-child) {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .main__button:first-child {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+.main__button:hover {
+    background-color: #E3B873;
+    border: 1px solid #E3B873;
+}
+
+.active__button {
+    background-color: #E3B873;
+    border: 1px solid #E3B873;
+}

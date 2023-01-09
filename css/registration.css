@@ -1,0 +1,195 @@
+.registration {
+
+
+    margin-top: 150px;
+
+    margin-bottom: 280px;
+}
+
+@media screen and (max-width: 1050px) {
+    .registration {
+        margin-bottom: 70px;
+    }
+}
+
+
+.registration__bg {
+    background-image: url(../img/registration/bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.registration__container {
+    max-width: 1226px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 0 23px;
+}
+
+.registration__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.registration__punct {
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.punct__item {
+    display: flex;
+    align-items: center;
+
+    /* margin-bottom: 80px; */
+}
+
+@media screen and (max-width: 890px) {
+    .punct__item {
+        display: none;
+    }
+}
+
+.punct__item-value {
+    color: #fff;
+    background-color: #E3B873;
+    padding: 10px 12px;
+    border-radius: 100%;
+    border: 8px solid #fff;
+    margin-right: 8px;
+}
+
+.punct__item-text {}
+
+.registration__form {
+    background-color: black;
+    max-width: 100%;
+    min-width: 450px;
+    padding: 15px 25px;
+    margin-left: calc(var(--index)*3);
+
+    position: relative;
+}
+
+@media screen and (max-width: 890px) {
+    .registration__form {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .registration {
+        display: none;
+    }
+}
+
+.registration__form h2 {
+    color: #fff;
+    text-align: center;
+
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.input__name-reg {
+
+    margin-bottom: 50px;
+}
+
+.registration-name {
+    color: #fff;
+    font-size: 16px;
+    color: #fff;
+    opacity: .4;
+}
+
+.registration-number{
+    color: #fff;
+}
+
+.registration__input {
+    background-color: #000;
+    border-bottom: 1px solid #363636;
+    padding-bottom: 5px;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    width: 100%;
+    color: #fff;
+}
+
+.input__number-reg {
+
+    margin-bottom: 50px;
+}
+
+.registration-number-reg {
+    color: #fff;
+}
+
+
+input::-webkit-input-placeholder {
+    color: #fff;
+background-color: #000;
+}
+
+
+.chekbox-registration {
+    color: #fff;
+}
+
+.registration__button {
+    margin-top: 25px;
+    margin-left: calc(var(--index)*-10);
+    background-color: #E3B873;
+    color: #fff;
+    font-family: "Nunito Sans";
+    padding: 15px 34px;
+
+    transition: all linear .5s;
+}
+
+.registration__button:hover {
+    background-color: #dead5e;
+    ;
+}
+
+@media screen and (max-width: 890px) {
+    .registration__button {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+}
+
+.registration__donate {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 15%;
+}
+
+@media screen and (max-width: 890px) {
+    .registration__donate {
+        display: none;
+    }
+}
+
+.registration__donate img {
+    padding-top: 20px;
+    transition: all linear.2s;
+}
+
+.registration__donate img:hover{
+    transform: scale(1.2);
+}
+
+.donate__text {
+    color: #E3B873;
+}

@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nunito+Sans:ital@0;1&display=swap');
+
+@import url(../css/mainBg.css);
+@import url(../css/completedProject.css);
+@import url(../css/control.css);
+@import url(../css/repair.css);
+@import url(../css/registration.css);
+@import url(../css/catigories.css);
+@import url(../css/clients.css);
+@import url(../css/form.css);
+@import url(../css/map.css);
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 320px;
+
+}
+
+body {
+    line-height: 1.55;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: #fff;
+    color: #252b42;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Nunito Sans';
+}
+
+input,
+button,
+textarea {
+    font-family: "";
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+:root {
+    --index: calc(-1vw + -1vh);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #131313;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #dead5e;
+    border-radius: 20px;
+    border: 3px solid de#ad5e;
+
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+.header {
+    background: #131313;
+}
+
+.header__container {
+    max-width: 1226px;
+    margin: 0 auto;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 23px 0;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.header__logo {
+    color: #E3B873;
+
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    transition: all linear .5s;
+}
+
+.header__logo:hover{
+    color:#dead5e;
+}
+
+.header__nav {}
+
+@media screen and (max-width: 1030px) {
+    .header__nav {
+        display: none;
+    }
+}
+
+.header__nav ul {
+    display: flex;
+}
+
+.header__nav ul li a {
+    font-size: 11px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+    transition: all 0.5s linear;
+}
+
+.header__nav ul li a:hover{
+    color: #E3B873;
+}
+
+.header__nav ul li:not(:first-child) {
+    margin-left: 47px;
+
+}
+
+.header__number {
+    font-size: 11px;
+    line-height: 15px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: calc(var(--index)* -0.5);
+
+    transition: all .5s linear ;
+}
+
+.header__number:hover{
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1030px) {
+    .header__number {
+        color: #fff;
+    }
+}
+
+.header__button {
+    transition: all linear .5s;
+}
+
+.header__button:hover{
+    background-color:#dead5e;
+}
+
+@media screen and (max-width: 1030px) {
+    .header__button {
+        display: none;
+    }
+}
+
+.button {
+    color: #fff;
+    padding: 13px 33px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+
+    font-family: 'Nunito Sans';
+    font-size: 11px;
+    text-transform: uppercase;
+    font-style: italic;
+    border: none;
+}
+
+.button:hover{
+    box-shadow: 0px 5px 15px rgba(255, 157, 0, 0.2);
+}
+
+.nav__bar {
+    display: none;
+}
+
+@media screen and (max-width: 1030px) {
+    .nav__bar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nav__bar {
+        display: none;
+    }
+}
+
+.line {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #E3B873;
+
+}
+
+.line:not(:last-child) {
+    margin-bottom: 6px;
+}
+/* =========Footer======== */
+
+@media screen and (max-width: 1040px) {
+    .footer {
+        display: none;
+    }
+}
